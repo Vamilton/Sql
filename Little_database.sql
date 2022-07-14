@@ -1,7 +1,7 @@
 createdb -U postgres MyHomework
 psql -U postgres -d MyHomework
 
-CREATE TABLE IF NOT NOT EXISTS Artist (
+CREATE TABLE IF NOT EXISTS Artist (
 	Id SERIAL PRIMARY KEY,
 	name VARCHAR (850) NOT NULL
 	);
@@ -50,5 +50,5 @@ CREATE TABLE IF NOT EXISTS Artist_albums (
 CREATE TABLE IF NOT EXISTS Collection_list (
 	TrackID INTEGER REFERENCES Track(Id),
 	CollID INTEGER REFERENCES Collection(Id),
-	CONSTRAINT pkCL PRIMARY KEY TrackID, CollID)
+	CONSTRAINT pkCL PRIMARY KEY TrackID, CollID
 	);
