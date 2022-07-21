@@ -100,6 +100,8 @@ values ('Brave New World',239,1),
 ('All That Matters',216,12),
 ('Moonlight Kissed',246,13),
 ('Crystalline',224,13),
+('Shadow Play',245,13),
+('Children of the Sun',293,13),
 ('The Labyrinth',227,13);
 
 insert INTO collection (name, year)
