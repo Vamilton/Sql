@@ -33,6 +33,7 @@ values (1,1),
 (9,1),
 (10,2),
 (11,7),
+(7,1);
 (12,1);
 
 insert INTO albums (name, year)
