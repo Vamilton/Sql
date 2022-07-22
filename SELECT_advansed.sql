@@ -12,7 +12,8 @@ join albums a on a.id = t.albumid
 group by a.name;
 
 select a.name from artist a
-join albums a2 on a.id = a2.id
+inner join artist_albums aa on a.id = aa.artistid
+inner join albums a2 on aa.albumid = a2.id
 where a2.year != 2020;
 
 WITH numberInfo AS(
