@@ -16,6 +16,16 @@ inner join artist_albums aa on a.id = aa.artistid
 inner join albums a2 on aa.albumid = a2.id
 where a2.year != 2020;
 
+select c.name from collection c
+inner join collection_list cl on c.id = cl.collid
+inner join track t on cl.trackid = t.id
+inner join albums a on t.albumid = a.id
+inner join artist_albums aa on a.id = aa.albumid
+inner join artist a2 on aa.artistid = a2.id
+where a2.name like 'Reach'
+group by c.name
+
+
 WITH numberInfo AS(
 select a.name, count(g.name) as ccc from albums a
 inner join artist_albums aa on a.id = aa.albumid
