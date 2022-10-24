@@ -55,7 +55,7 @@ def create_tables(engine):
     Base.metadata.drop_all(engine)
     Base.metadata.create_all(engine)
 
-DSN = 'postgresql://postgres:fyikfu77@localhost:5432/lastHomework'
+DSN = '...'
 engine = sq.create_engine(DSN)
 create_tables(engine)
 

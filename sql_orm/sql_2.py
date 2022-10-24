@@ -5,7 +5,7 @@ import re
 import json
 
 Base = declarative_base()
-DSN = 'postgresql://postgres:fyikfu77@localhost:5432/lastHomework'
+DSN = '...'
 engine = sq.create_engine(DSN)
 Session = sessionmaker(bind=engine)
 session = Session()
